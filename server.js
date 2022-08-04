@@ -8,21 +8,19 @@ const PORT = process.env.PORT;
 const weatherData = require('./data/weather.json');
 
 
-server.listen(PORT,()=>console.log("Server is ready!"));
+server.listen(PORT, () => console.log("Server is ready!"));
 
 
-server.get('/weather',(req,res)=> {
+server.get('/weather', (req, res) => {
 
     let inputCityName = req.query.searchQuery;
     let inputLat = req.query.lat;
     let inputLon = req.query.lon;
-
-    let result = weatherData.find(item=>inputCityName.toLowerCase() === item.city_name.toLowerCase());
-
     try {
-        let filteredData = result.data.map(item=> new ForCast(item));
+        let result = weatherData.find(item => inputCityName.toLowerCase() === item.city_name.toLowerCase());
+        let filteredData = result.data.map(item => new ForCast(item));
         res.status(200).send(filteredData);
-    }catch (error) {
+    } catch (error) {
         res.status(400).send('Error Data not found !');
     }
 
@@ -33,6 +31,6 @@ class ForCast {
     constructor(day) {
 
         this.date = day.valid_date;
-        this.description = day.weather.description ;
+        this.description = day.weather.description;
     }
 }
