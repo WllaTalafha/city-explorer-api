@@ -33,7 +33,7 @@ I would like to thank him for all collaborations during the lab.
 
 -------------
 
-Name of feature: lab 07
+Name of feature: lab 07- local server
 
 Estimate of time needed to complete: 3
 
@@ -45,7 +45,7 @@ Actual time needed to complete: 1:30 hour
 
 ---
 
-Name of feature: lab 08
+Name of feature: lab 08 - outer API
 
 Estimate of time needed to complete: 3:30
 
@@ -57,7 +57,7 @@ Actual time needed to complete: 2:00 hour
 
 ---
 
-Name of feature: lab 09
+Name of feature: lab 09 - modules
 
 Estimate of time needed to complete: 30 mins
 
@@ -66,3 +66,16 @@ Start time: 5 pm
 Finish time: 5:30 pm
 
 Actual time needed to complete: 10 mins
+
+---
+
+
+Name of feature: lab 10 -caching
+
+Estimate of time needed to complete: 30 mins
+
+Start time: 8 pm
+
+Finish time: 8:30 pm
+
+Actual time needed to complete: 15 mins
