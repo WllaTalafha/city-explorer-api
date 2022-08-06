@@ -2,9 +2,8 @@
 
 const express = require('express');
 const cors = require('cors');
-const { default: axios } = require('axios');
 require('dotenv').config();
-const axios = require(axios);
+const axios = require('axios');
 const server = express();
 const PORT = process.env.PORT;
 
