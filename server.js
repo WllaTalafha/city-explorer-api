@@ -10,9 +10,11 @@ const main = require('./modules/main');
 const weather = require('./modules/weather');
 const movie = require('./modules/movie');
 
+
 server.listen(PORT, () => console.log("Server is ready!"));
 
 server.use(cors());
+
 
 server.get('/weather', weather.handleWeather);
 server.get('/movie', movie.handleMovie);
